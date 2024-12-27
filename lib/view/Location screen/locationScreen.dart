@@ -4,14 +4,9 @@ import 'package:queryui/utils/ColorConstants.dart';
 import 'package:queryui/utils/appstyle.dart';
 import 'package:queryui/view/customWidgets/customAppBar.dart';
 
-class Locationscreen extends StatefulWidget {
+class Locationscreen extends StatelessWidget {
   const Locationscreen({super.key});
 
-  @override
-  State<Locationscreen> createState() => _LocationscreenState();
-}
-
-class _LocationscreenState extends State<Locationscreen> {
   final String getLocation = """
     query {
       characters {

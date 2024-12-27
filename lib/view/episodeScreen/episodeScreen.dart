@@ -4,14 +4,9 @@ import 'package:queryui/utils/appstyle.dart';
 import 'package:queryui/utils/colorconstants.dart';
 import 'package:queryui/view/customWidgets/customAppBar.dart';
 
-class Episodescreen extends StatefulWidget {
+class Episodescreen extends StatelessWidget {
   const Episodescreen({super.key});
 
-  @override
-  State<Episodescreen> createState() => _EpisodescreenState();
-}
-
-class _EpisodescreenState extends State<Episodescreen> {
  final String getEpisode= """
     query {
       episodes {
@@ -34,8 +29,6 @@ class _EpisodescreenState extends State<Episodescreen> {
       }
     }
     """;
-
-
 
   @override
   Widget build(BuildContext context) {

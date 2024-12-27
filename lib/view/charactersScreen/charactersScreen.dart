@@ -4,14 +4,9 @@ import 'package:queryui/utils/ColorConstants.dart';
 import 'package:queryui/utils/appstyle.dart';
 import 'package:queryui/view/customWidgets/customAppBar.dart';
 
-class Charactersscreen extends StatefulWidget {
+class Charactersscreen extends StatelessWidget {
   const Charactersscreen({super.key});
 
-  @override
-  State<Charactersscreen> createState() => _CharactersscreenState();
-}
-
-class _CharactersscreenState extends State<Charactersscreen> {
   final String getCharacters = """
 query {
   characters {
