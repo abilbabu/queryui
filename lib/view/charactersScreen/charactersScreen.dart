@@ -12,12 +12,7 @@ class Charactersscreen extends StatefulWidget {
 }
 
 class _CharactersscreenState extends State<Charactersscreen> {
-  late String getCharacters;
-
-  @override
-  void initState() {
-    super.initState();
-    getCharacters = """
+  final String getCharacters = """
 query {
   characters {
     info {
@@ -45,7 +40,6 @@ query {
   }
 }
 """;
-  }
 
   @override
   Widget build(BuildContext context) {

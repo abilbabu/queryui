@@ -12,12 +12,7 @@ class Episodescreen extends StatefulWidget {
 }
 
 class _EpisodescreenState extends State<Episodescreen> {
-  late String getEpisode;
-
-  @override
-  void initState() {
-    super.initState();
-    getEpisode = """
+ final String getEpisode= """
     query {
       episodes {
         info {
@@ -39,7 +34,8 @@ class _EpisodescreenState extends State<Episodescreen> {
       }
     }
     """;
-  }
+
+
 
   @override
   Widget build(BuildContext context) {

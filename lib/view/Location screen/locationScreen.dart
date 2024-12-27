@@ -12,13 +12,7 @@ class Locationscreen extends StatefulWidget {
 }
 
 class _LocationscreenState extends State<Locationscreen> {
-  late String getLocation;
-
-  @override
-  void initState() {
-    super.initState();
-
-    getLocation = """
+  final String getLocation = """
     query {
       characters {
         info {
@@ -45,7 +39,6 @@ class _LocationscreenState extends State<Locationscreen> {
       }
     }
     """;
-  }
 
   @override
   Widget build(BuildContext context) {
