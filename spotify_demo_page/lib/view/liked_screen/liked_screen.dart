@@ -24,7 +24,7 @@ class _LikedScreenState extends State<LikedScreen> {
 
     _scrollController.addListener(() {
       if (_scrollController.offset > 200) {
-        setState(() {
+        setState(() {fi
           _showAppBar = true;
         });
       } else {
